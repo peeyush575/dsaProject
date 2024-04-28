@@ -17,7 +17,7 @@ The codebase will look something like this:
 
 ### Usage Instructions
 
-The given codebase can be compiled using the following command (as makefile is already defined to compile the program to `./dynamicMST`):
+The given codebase can be compiled using the following command (as makefile is already defined to compile the program to `./dynamicMST`):\
 For Linux/Unix based systems:
 ```bash
 make
