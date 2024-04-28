@@ -25,7 +25,7 @@ int main(){
     scanf("%d", &choice);
     while(choice != 4){
         edgeVector* mst;
-        int v1, v2, weight;
+        int v1, v2, weight, v;
         switch(choice){
             case 1:
                 printf("Enter Source Vertex: ");
@@ -56,7 +56,6 @@ int main(){
                 break;
 
             case 3:
-                int v;
                 printf("Enter Vertex: ");
                 scanf("%d", &v);
                 removeVertex(graph, v);
