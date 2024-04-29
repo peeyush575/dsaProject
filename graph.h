@@ -19,7 +19,7 @@ typedef struct Graph{
     edgeVector* edgelist;
 }Graph;
 
-void initVector(edgeVector* edgelist);
+void initVector(edgeVector** edgelist);
 void push_back(edgeVector* edgelist, Edge edge);
 Edge at(edgeVector* edgelist, int index);
 void freeVector(edgeVector* edgelist);
