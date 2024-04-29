@@ -1,7 +1,5 @@
 # Compiler
 CC = gcc
-# Compiler flags
-CFLAGS = -w
 
 # Source files
 SRC = mst.c graph.c
@@ -13,7 +11,7 @@ all: $(TARGET)
 
 # Rule to build the executable
 $(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) -o $@ $^
 
 # Clean rule
 clean:
