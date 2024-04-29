@@ -2,10 +2,11 @@
 #include<stdlib.h>
 #include"graph.h"
 
-void initVector(edgeVector* edgelist){
-    edgelist->edges = (Edge*) malloc(10 * sizeof(Edge));
-    edgelist->size = 0;
-    edgelist->capacity = 10;
+void initVector(edgeVector** edgelist){
+    (*edgelist) = (edgeVector*) malloc(sizeof(edgeVector));
+    (*edgelist)->edges = (Edge*) malloc(10 * sizeof(Edge));
+    (*edgelist)->size = 0;
+    (*edgelist)->capacity = 10;
 }
 
 void push_back(edgeVector* edgelist, Edge edge){
